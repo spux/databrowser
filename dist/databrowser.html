@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Solid Data Browser</title>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        panes.runDataBrowser()
+      })
+    </script>
+  <link href="/mash.css" rel="stylesheet"></head>
+  <body class="db-layout">
+    <!-- solid-panes' OutlineManager injects into this element -->
+    <header class="db-layout__header header" id="PageHeader"></header>
+    <div class="TabulatorOutline db-layout__content" id="DummyUUID" role="main">
+        <table id="outline"></table>
+        <div id="GlobalDashboard"></div>
+    </div>
+    <footer class="db-layout__footer" id="PageFooter"></footer>
+  <script type="text/javascript" src="/mashlib.min.js"></script></body>
+</html>
